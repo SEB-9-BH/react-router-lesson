@@ -319,6 +319,16 @@ export default function Currencies() {
 
 ## 9) Price Page with `useEffect`… line by line
 
+Before we create this component take a moment to get your FREE Api key from coinapi.io. Keep in mind you can only make 100 requests per day with your free apiKey.
+
+Once you have your api key here is what we will do:
+
+- store the apikey and currency symbol in different variables
+- use the useEffect hook to make an api call
+- interpolate the apikey and symbol in the fetch URL
+- save the resulting data in state and render it
+- loaded and loading function for rendering the data if exists
+
 `src/pages/Price/Price.jsx`
 
 ```jsx
