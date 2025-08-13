@@ -56,24 +56,24 @@ export default function Demo({ url }) {
 ```
 
 **What each marker means.**
-\[1] Data lives in state.
-\[2] Loading flag controls UI.
-\[3] Error string explains failures.
-\[4] `useEffect` runs after paint.
-\[5] Guard when input is empty.
-\[6] Create an abort controller.
-\[7] Define async worker inside effect.
-\[8] Flip loading on.
-\[9] Clear stale errors.
-\[10] Fetch with abort signal.
-\[11] Throw on non-2xx.
-\[12] Parse JSON.
-\[13] Commit data to state.
-\[14] Ignore abort as an error.
-\[15] Always end loading.
-\[16] Start work.
-\[17] Cancel if deps change or unmount.
-\[18] Run on mount… and whenever `url` changes.
+- [1] Data lives in state.
+- [2] Loading flag controls UI.
+- [3] Error string explains failures.
+- [4] `useEffect` runs after paint.
+- [5] Guard when input is empty.
+- [6] Create an abort controller.
+- [7] Define async worker inside effect.
+- [8] Flip loading on.
+- [9] Clear stale errors.
+- [10] Fetch with abort signal.
+- [11] Throw on non-2xx.
+- [12] Parse JSON.
+- [13] Commit data to state.
+- [14] Ignore abort as an error.
+- [15] Always end loading.
+- [16] Start work.
+- [17] Cancel if deps change or unmount.
+- [18] Run on mount… and whenever `url` changes.
 
 **Dev note.** StrictMode replays mount effects in dev. Production runs once.
 
@@ -140,15 +140,15 @@ createRoot(document.getElementById("root")).render( // [6]
 );
 ```
 
-\[1] Use StrictMode in dev.
-\[2] Use the modern root API.
-\[3] Make routing available to children.
-\[4] Import the app shell.
-\[5] Global styles load once.
-\[6] Bind React to the root div.
-\[7] Strict checks catch issues.
-\[8] Router watches the URL.
-\[9] App renders inside Router.
+- [1] Use StrictMode in dev.
+- [2] Use the modern root API.
+- [3] Make routing available to children.
+- [4] Import the app shell.
+- [5] Global styles load once.
+- [6] Bind React to the root div.
+- [7] Strict checks catch issues.
+- [8] Router watches the URL.
+- [9] App renders inside Router.
 
 ---
 
@@ -220,16 +220,16 @@ export default function App() {
 }
 ```
 
-\[1] Bring in routing primitives.
-\[2] Top navigation.
-\[3–5] Page components.
-\[6] Local styles if needed.
-\[7] App wrapper.
-\[8] Nav stays visible across pages.
-\[9] Router outlet for page matching.
-\[10] Home route.
-\[11] Coin list route.
-\[12] Dynamic route with a `:symbol` param.
+- [1] Bring in routing primitives.
+- [2] Top navigation.
+- [3–5] Page components.
+- [6] Local styles if needed.
+- [7] App wrapper.
+- [8] Nav stays visible across pages.
+- [9] Router outlet for page matching.
+- [10] Home route.
+- [11] Coin list route.
+- [12] Dynamic route with a `:symbol` param.
 
 ---
 
@@ -251,11 +251,11 @@ export default function Nav() {
 }
 ```
 
-\[1] `Link` changes URL without reload.
-\[2] Keep styles colocated if desired.
-\[3] Simple bar layout.
-\[4] Link to home.
-\[5] Link to list.
+- [1] `Link` changes URL without reload.
+- [2] Keep styles colocated if desired.
+- [3] Simple bar layout.
+- [4] Link to home.
+- [5] Link to list.
 
 Add to `src/index.css`:
 
@@ -299,11 +299,11 @@ export default function Currencies() {
 }
 ```
 
-\[1] We will link to each coin’s price page.
-\[2] Whitelist of supported coins.
-\[3] Map to elements.
-\[4] Build a URL with the `symbol` param.
-\[5] Render a readable name.
+- [1] We will link to each coin’s price page.
+- [2] Whitelist of supported coins.
+- [3] Map to elements.
+- [4] Build a URL with the `symbol` param.
+- [5] Render a readable name.
 
 ---
 
@@ -362,29 +362,29 @@ export default function Price() {
 }
 ```
 
-\[1] Read params from the URL.
-\[2] Use hooks via destructured imports.
-\[3] Grab the `:symbol` segment.
-\[4] Read the API key from Vite env.
-\[5–7] Local state for UI.
-\[8] Build the request URL.
-\[9] Run an effect on mount and on param change.
-\[10] Skip if param missing.
-\[11] Prepare for cancellation.
-\[12] Define async worker.
-\[13] Start loading.
-\[14] Clear old errors.
-\[15] Fetch with signal.
-\[16] Throw on bad status.
-\[17] Parse the body.
-\[18] Save data.
-\[19] Only show real errors.
-\[20] End loading.
-\[21] Execute worker.
-\[22] Cancel on change or unmount.
-\[23] Depend on inputs that change.
-\[24–26] Render by state branch.
-\[27–29] Show result and echo the param.
+- [1] Read params from the URL.
+- [2] Use hooks via destructured imports.
+- [3] Grab the `:symbol` segment.
+- [4] Read the API key from Vite env.
+- [5–7] Local state for UI.
+- [8] Build the request URL.
+- [9] Run an effect on mount and on param change.
+- [10] Skip if param missing.
+- [11] Prepare for cancellation.
+- [12] Define async worker.
+- [13] Start loading.
+- [14] Clear old errors.
+- [15] Fetch with signal.
+- [16] Throw on bad status.
+- [17] Parse the body.
+- [18] Save data.
+- [19] Only show real errors.
+- [20] End loading.
+- [21] Execute worker.
+- [22] Cancel on change or unmount.
+- [23] Depend on inputs that change.
+- [24–26] Render by state branch.
+- [27–29] Show result and echo the param.
 
 ---
 
