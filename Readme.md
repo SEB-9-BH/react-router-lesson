@@ -260,8 +260,18 @@ export default function Nav() {
 Add to `src/index.css`:
 
 ```css
-.nav { display: flex; justify-content: space-between; background: #000; color: #fff; padding: 15px; font-size: 2em; }
-.nav a { color: #fff; text-decoration: none; }
+.nav {
+  display: flex;
+  justify-content: space-between;
+  background: #000;
+  color: #fff;
+  padding: 15px;
+  font-size: 2em;
+}
+.nav a {
+  color: #fff;
+  text-decoration: none;
+}
 ```
 
 ---
